@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Our Love Story</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .counter-section,.timeline-content{border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.1)}.counter-section,.gallery-title,.header,.letter-title,.timeline-title{text-align:center}.burn-effect,.love-effect{pointer-events:none;opacity:0}body{background-color:#ffebee;color:#333;overflow-x:hidden}*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}.header{background:linear-gradient(135deg,#ff758c,#ff7eb3);color:#fff;padding:3rem 1rem;position:relative;overflow:hidden}.heart,.heart:after,.heart:before{width:20px;height:20px;background-color:rgba(255,255,255,.6)}.header h1{font-size:3rem;margin-bottom:1rem;animation:1.5s fadeInDown}.header p{font-size:1.2rem;max-width:800px;margin:0 auto;animation:1.5s fadeInUp}.heart{position:absolute;transform:rotate(45deg);animation:5s ease-in-out infinite float;opacity:0}.heart:after,.heart:before{content:'';border-radius:50%;position:absolute}.heart:before{top:-10px;left:0}.heart:after{top:0;left:-10px}.counter-section{background-color:#fff;padding:2rem;margin:2rem auto;max-width:800px;animation:2s fadeIn}.counter-title,.proposal-content h2{color:#e91e63;margin-bottom:1rem}.counters{display:flex;justify-content:space-around;flex-wrap:wrap}.counter{margin:1rem}.counter-number{font-size:2.5rem;color:#ff758c;font-weight:700}.counter-label{color:#666}.timeline-section{padding:3rem 1rem;max-width:1200px;margin:0 auto}.timeline-title{margin-bottom:3rem;color:#e91e63;font-size:2.5rem;animation:1s fadeIn}.timeline{position:relative;padding:0 1rem}.timeline:before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:4px;height:100%;background:linear-gradient(to bottom,#ff758c,#ff7eb3)}.timeline-item{position:relative;margin-bottom:3rem;animation:1s fadeInUp}.timeline-item:nth-child(odd){padding-right:50%;text-align:right}.timeline-item:nth-child(2n){padding-left:50%;text-align:left}.timeline-content{background-color:#fff;padding:1.5rem;position:relative}.timeline-content:before{content:'';position:absolute;width:20px;height:20px;background-color:#ff758c;border-radius:50%;top:20px}.timeline-item:nth-child(odd) .timeline-content:before{right:-60px}.timeline-item:nth-child(2n) .timeline-content:before{left:-60px}.timeline-date{color:#e91e63;font-weight:700;margin-bottom:.5rem}.timeline-image{width:100%;border-radius:8px;margin-top:1rem;opacity:0;transition:opacity .5s}.gallery-image.loaded,.timeline-image.loaded{opacity:1}.gallery-section{padding:3rem 1rem;background-color:#fff}.gallery-title{margin-bottom:2rem;color:#e91e63;font-size:2.5rem}.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;max-width:1200px;margin:0 auto}.proposal-buttons,.proposal-modal{display:flex;justify-content:center}.gallery-item{position:relative;overflow:hidden;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.1);aspect-ratio:1/1}.gallery-image{width:100%;height:100%;object-fit:cover;transition:transform .5s;opacity:0}.gallery-item:hover .gallery-image{transform:scale(1.1)}.letter-section{max-width:800px;margin:3rem auto;padding:2rem;background-color:#fff;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.1);position:relative;overflow:hidden}.burn-effect,.love-effect,.passcode-screen,.proposal-modal{position:fixed;top:0;left:0}.letter-section:before{content:'';position:absolute;top:0;left:0;width:100%;height:10px;background:linear-gradient(to right,#ff758c,#ff7eb3)}.letter-title{color:#e91e63;margin-bottom:1rem}.letter-content{line-height:1.6;font-size:1.1rem}.signature{font-style:italic;text-align:right;margin-top:2rem;font-family:'Brush Script MT',cursive;font-size:1.5rem;color:#e91e63}.footer{background:linear-gradient(135deg,#ff758c,#ff7eb3);color:#fff;text-align:center;padding:2rem;margin-top:3rem}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes float{0%{transform:rotate(45deg) translateY(0) translateX(0);opacity:0}10%{opacity:.6}100%{transform:rotate(45deg) translateY(-500px) translateX(100px);opacity:0}}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}.pulse{animation:2s infinite pulse}@media (max-width:768px){.counter-number,.header h1{font-size:2rem}.timeline:before{left:30px}.timeline-item:nth-child(2n),.timeline-item:nth-child(odd){padding:0 0 0 70px;text-align:left}.timeline-item:nth-child(2n) .timeline-content:before,.timeline-item:nth-child(odd) .timeline-content:before{left:-50px}}.proposal-modal{width:100%;height:100%;background:rgba(0,0,0,.8);align-items:center;z-index:1000}.proposal-content{background:#fff;padding:2rem;border-radius:10px;text-align:center;max-width:500px;animation:.5s fadeIn}.btn-no,.btn-yes{color:#fff;padding:.5rem 2rem;font-size:1.2rem;cursor:pointer}.proposal-buttons{gap:1rem;margin-top:2rem}.btn-yes{background-color:#4caf50;border:none;border-radius:5px}.btn-no{background-color:#f44336;border:none;border-radius:5px}.phone-number{font-size:1.5rem;color:#e91e63;margin-top:1rem;display:none}.sad-face{font-size:5rem;margin:1rem 0;display:none}.burn-effect{width:100%;height:100%;background:linear-gradient(to bottom,red,orange,#ff0);z-index:999;transition:opacity 2s}.passcode-screen{width:100%;height:100%;background:linear-gradient(135deg,#ff758c,#ff7eb3);display:flex;justify-content:center;align-items:center;flex-direction:column;z-index:2000}.passcode-container{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.2);text-align:center}.passcode-input{display:flex;gap:.5rem;margin:1rem 0}.passcode-digit{width:40px;height:50px;font-size:1.5rem;text-align:center;border:2px solid #ddd;border-radius:5px}.passcode-submit{background-color:#e91e63;color:#fff;border:none;padding:.5rem 1.5rem;border-radius:5px;margin-top:1rem;cursor:pointer}.passcode-error{color:#f44336;margin-top:.5rem;display:none}.love-effect{width:100%;height:100%;z-index:800;background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23ff758c" d="M50,30 C60,20 70,25 50,45 C30,25 40,20 50,30 Z"/></svg>');animation:10s linear infinite floatHearts;transition:opacity 1s}@keyframes floatHearts{0%{background-position:0 0}100%{background-position:100px 100px}}
+    </style>
+</head>
+
+<body>
+    <div class="passcode-screen">
+        <div class="passcode-container">
+            <h2>Enter Passcode</h2>
+            <div class="passcode-input"><input type="password" maxlength="1" class="passcode-digit"><input
+                    type="password" maxlength="1" class="passcode-digit"><input type="password" maxlength="1"
+                    class="passcode-digit"><input type="password" maxlength="1" class="passcode-digit"><input
+                    type="password" maxlength="1" class="passcode-digit"><input type="password" maxlength="1"
+                    class="passcode-digit"></div>
+            <p class="passcode-error">Incorrect passcode. Try again.</p><button class="passcode-submit">Unlock</button>
+        </div>
+    </div>
+    <div class="love-effect"></div>
+    <div class="burn-effect"></div>
+    
+    <header class="header">
+        <h1>Our Love Story</h1>
+        <p>Every moment with you is a beautiful memory. This is our journey together since September 21, 2021.</p>
+        <div id="hearts-container"></div>
+    </header>
+    <section class="counter-section">
+        <h2 class="counter-title">Our Time Together</h2>
+        <div class="counters">
+            <div class="counter">
+                <div class="counter-number" id="days-count">0</div>
+                <div class="counter-label">Days</div>
+            </div>
+            <div class="counter">
+                <div class="counter-number" id="hours-count">0</div>
+                <div class="counter-label">Hours</div>
+            </div>
+            <div class="counter">
+                <div class="counter-number" id="minutes-count">0</div>
+                <div class="counter-label">Minutes</div>
+            </div>
+            <div class="counter">
+                <div class="counter-number" id="seconds-count">0</div>
+                <div class="counter-label">Seconds</div>
+            </div>
+        </div>
+    </section>
+    <section class="timeline-section">
+        <h2 class="timeline-title">Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">April 26, 2022</div>
+                    <h3>The Day We Met</h3>
+                    <p>The most beautiful day of my life when our eyes met for the first time. I knew right then that
+                        you were special.</p><img
+                        data-src="./img/1.JPG" alt="Our first meet"
+                        class="timeline-image lazy">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Aug 04, 2022</div>
+                    <h3>Our First Date</h3>
+                    <p>That magical evening when we talked for hours without noticing time passing by. Your smile lit up
+                        the whole place.</p><img data-src="./img/3.jpg"
+                        alt="Our first date" class="timeline-image lazy">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Aug 18, 2022</div>
+                    <h3>Another Day</h3>
+                    <p>Celebrating our first holiday season together, exchanging gifts and making memories that would
+                        last forever.</p><img data-src="./img/2.jpg"
+                        alt="First Christmas" class="timeline-image lazy">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Sep 29, 2022</div>
+                    <h3>Lovely Day</h3>
+                    <p>The day I realized how lucky I am to have you. Your love makes every day feel like Valentine's
+                        Day.</p><img data-src="./img/4.jpg"
+                        alt="Valentine's Day" class="timeline-image lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <h2 class="gallery-title">Our Beautiful Moments</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img data-src="./img/5.jpg"
+                    alt="Happy moment" class="gallery-image lazy"></div>
+            <div class="gallery-item"><img data-src="./img/6.jpg"
+                    alt="Romantic moment" class="gallery-image lazy"></div>
+            <div class="gallery-item"><img data-src="./img/7.jpg"
+                    alt="Beach day" class="gallery-image lazy"></div>
+            <div class="gallery-item"><img data-src="./img/8.jpg"
+                    alt="Romantic dinner" class="gallery-image lazy"></div>
+            <div class="gallery-item"><img data-src="./img/9.jpg"
+                    alt="Travel together" class="gallery-image lazy"></div>
+            <div class="gallery-item"><img
+                    data-src="./img/10.jpg" alt="Anniversary"
+                    class="gallery-image lazy"></div>
+            <div class="gallery-item"><img data-src="./img/11.jpg"
+                    alt="Celebration" class="gallery-image lazy"></div>
+            <div class="gallery-item"><img data-src="./img/12.jpg"
+                    alt="Cute moment" class="gallery-image lazy"></div>
+        </div>
+    </section>
+    <section class="letter-section">
+        <h2 class="letter-title">To The Love of My Life</h2>
+        <div class="letter-content">
+            <p>My Dearest Doni,</p>
+            <p>From the moment we met on September 21, 2021, my life changed in ways I could never have imagined. Every
+                day since then has been a gift, filled with your love, laughter, and beautiful presence.</p>
+            <p>I cherish every memory we've created together - from our first date to all the little moments in between.
+                Your smile brightens my darkest days, and your love gives me strength I never knew I had.</p>
+            <p>This website is a small token of my love for you, a collection of our journey together. As the counter
+                shows, every second with you is precious to me. I look forward to creating countless more memories as we
+                continue our journey together.</p>
+            <p>You are my everything, my today, and all of my tomorrows.</p>
+            <div class="signature">Forever Yours DILU</div>
+        </div>
+    </section>
+    <div class="reveal-proposal-container" style="text-align:center; margin: 40px 0;">
+        <button id="reveal-proposal-btn" style="padding: 12px 24px; font-size: 18px; background-color: #ff4081; color: white; border: none; border-radius: 8px; cursor: pointer;">
+          See something special 💖
+        </button>
+      </div>
+      <div class="proposal-modal" style="display:none">
+        <div class="proposal-content">
+            <h2>Will You Marry Me?</h2>
+            <p>My love, you make every day special. Will you make me the happiest person and be mine forever?</p>
+            <div class="proposal-buttons"><button class="btn-yes">YES!</button><button class="btn-no">No</button></div>
+            <div class="phone-number">Call me now: <span id="my-number">076 907 2905</span></div>
+            <div class="sad-face">😢</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Created with love for the most amazing person in my life</p>
+        <p>&copy; <span id="current-year"></span> - Our Love Story</p>
+    </footer>
+    <script>const _0xe0341b=_0x2844;function _0x2844(_0x2395c7,_0x388392){const _0x3ce539=_0x3ce5();return _0x2844=function(_0x2844d8,_0x117cdb){_0x2844d8=_0x2844d8-0x13c;let _0x10271b=_0x3ce539[_0x2844d8];return _0x10271b;},_0x2844(_0x2395c7,_0x388392);}(function(_0x59cd04,_0x706bb){const _0x5263f0=_0x2844,_0x27d0fc=_0x59cd04();while(!![]){try{const _0x516604=-parseInt(_0x5263f0(0x17a))/0x1+-parseInt(_0x5263f0(0x155))/0x2+-parseInt(_0x5263f0(0x175))/0x3*(parseInt(_0x5263f0(0x145))/0x4)+parseInt(_0x5263f0(0x14a))/0x5+-parseInt(_0x5263f0(0x16b))/0x6*(-parseInt(_0x5263f0(0x13c))/0x7)+-parseInt(_0x5263f0(0x13d))/0x8*(parseInt(_0x5263f0(0x17c))/0x9)+-parseInt(_0x5263f0(0x141))/0xa*(-parseInt(_0x5263f0(0x146))/0xb);if(_0x516604===_0x706bb)break;else _0x27d0fc['push'](_0x27d0fc['shift']());}catch(_0x22f570){_0x27d0fc['push'](_0x27d0fc['shift']());}}}(_0x3ce5,0xa2500));function createHearts(){const _0x66cc00=_0x2844,_0x59a3ac=document[_0x66cc00(0x150)](_0x66cc00(0x15a));for(let _0x27fab1=0x0;_0x27fab1<0xf;_0x27fab1++){const _0x154001=document[_0x66cc00(0x184)](_0x66cc00(0x178));_0x154001[_0x66cc00(0x147)]['add']('heart'),_0x154001[_0x66cc00(0x156)][_0x66cc00(0x14c)]=Math[_0x66cc00(0x183)]()*0x64+'%',_0x154001[_0x66cc00(0x156)][_0x66cc00(0x15d)]='-20px',_0x154001[_0x66cc00(0x156)][_0x66cc00(0x13f)]=Math[_0x66cc00(0x183)]()*0x5+'s',_0x154001[_0x66cc00(0x156)]['animationDuration']=0x5+Math[_0x66cc00(0x183)]()*0xa+'s',_0x59a3ac[_0x66cc00(0x164)](_0x154001);}}function updateCounter(){const _0x260489=_0x2844,_0x4f7b66=new Date(_0x260489(0x171))[_0x260489(0x16a)](),_0x332548=new Date()[_0x260489(0x16a)](),_0x118802=_0x332548-_0x4f7b66;document[_0x260489(0x150)](_0x260489(0x165))[_0x260489(0x16e)]=Math['floor'](_0x118802/0x5265c00),document[_0x260489(0x150)]('hours-count')[_0x260489(0x16e)]=Math[_0x260489(0x17e)](_0x118802%0x5265c00/0x36ee80),document[_0x260489(0x150)]('minutes-count')['innerHTML']=Math[_0x260489(0x17e)](_0x118802%0x36ee80/0xea60),document[_0x260489(0x150)]('seconds-count')[_0x260489(0x16e)]=Math['floor'](_0x118802%0xea60/0x3e8);}function lazyLoadImages(){const _0x5097fa=_0x2844,_0x2e950a=document[_0x5097fa(0x16d)](_0x5097fa(0x16f)),_0x4b489e=new IntersectionObserver((_0x677bbc,_0x360a20)=>{const _0xdc29c5=_0x5097fa;_0x677bbc[_0xdc29c5(0x161)](_0x5b3176=>{const _0x44488a=_0xdc29c5;if(_0x5b3176['isIntersecting']){const _0x223c47=_0x5b3176[_0x44488a(0x159)];_0x223c47[_0x44488a(0x169)]=_0x223c47[_0x44488a(0x181)][_0x44488a(0x169)],_0x223c47[_0x44488a(0x147)][_0x44488a(0x162)](_0x44488a(0x14f)),_0x360a20[_0x44488a(0x172)](_0x223c47);}});},{'rootMargin':'0px\x200px\x20100px\x200px'});_0x2e950a['forEach'](_0x2177e7=>_0x4b489e[_0x5097fa(0x166)](_0x2177e7));}function setCurrentYear(){const _0x1e0565=_0x2844;document['getElementById'](_0x1e0565(0x158))[_0x1e0565(0x167)]=new Date()[_0x1e0565(0x15f)]();}function _0x3ce5(){const _0x3c4e42=['4636020TBWmiK','.btn-yes','left','remove','borderColor','loaded','getElementById','display','pulse','addEventListener','flex','1170922hAEYUj','style','block','current-year','target','hearts-container','focus','.counter-section','bottom','click','getFullYear','.passcode-digit','forEach','add','input','appendChild','days-count','observe','textContent','opacity','src','getTime','230004FvUuqp','.timeline-section','querySelectorAll','innerHTML','.lazy','#f44336','September\x2021,\x202021\x2000:00:00','unobserve','.phone-number','scrollTo','3SQXNVX','.passcode-submit','.btn-no','div','.letter-section','307798WGZBta','length','8387586YIfZlx','.gallery-section','floor','querySelector','.footer','dataset','.burn-effect','random','createElement','231pLRslx','8NFhKYG','value','animationDelay','.sad-face','7663790KfsaZc','.header\x20h1','DOMContentLoaded','.love-effect','4939756ffnARV','22ZgfKBY','classList','none','.passcode-error'];_0x3ce5=function(){return _0x3c4e42;};return _0x3ce5();}function showProposal(){setTimeout(()=>{const _0x46b218=_0x2844;document[_0x46b218(0x17f)]('.proposal-modal')[_0x46b218(0x156)][_0x46b218(0x151)]=_0x46b218(0x154),window[_0x46b218(0x174)]({'top':0x0,'behavior':'smooth'});},0x3e8);}function setupPasscode(){const _0x214b02=_0x2844,_0x14bf3f=document['querySelectorAll'](_0x214b02(0x160)),_0x2ce94e=document[_0x214b02(0x17f)](_0x214b02(0x176)),_0x9ec297=document[_0x214b02(0x17f)](_0x214b02(0x149)),_0x2f5367='200105';_0x14bf3f[_0x214b02(0x161)]((_0x277dc4,_0x3a1f9e)=>{const _0x4a4e5c=_0x214b02;_0x277dc4[_0x4a4e5c(0x153)](_0x4a4e5c(0x163),()=>{const _0x1072f4=_0x4a4e5c;_0x277dc4[_0x1072f4(0x13e)][_0x1072f4(0x17b)]>=0x1&&_0x14bf3f[_0x3a1f9e+0x1]&&_0x14bf3f[_0x3a1f9e+0x1][_0x1072f4(0x15b)]();});}),_0x2ce94e[_0x214b02(0x153)](_0x214b02(0x15e),()=>{const _0x2642be=_0x214b02;let _0x248f8b='';_0x14bf3f[_0x2642be(0x161)](_0x16e64c=>{_0x248f8b+=_0x16e64c['value'];}),_0x248f8b===_0x2f5367?(document[_0x2642be(0x17f)]('.passcode-screen')['style'][_0x2642be(0x168)]='0',setTimeout(()=>{const _0x55a037=_0x2642be;document[_0x55a037(0x17f)]('.passcode-screen')['style'][_0x55a037(0x151)]='none';},0x1f4)):(_0x9ec297[_0x2642be(0x156)][_0x2642be(0x151)]=_0x2642be(0x157),_0x14bf3f[_0x2642be(0x161)](_0x20d09e=>{const _0x71c7c1=_0x2642be;_0x20d09e[_0x71c7c1(0x13e)]='',_0x20d09e[_0x71c7c1(0x156)][_0x71c7c1(0x14e)]=_0x71c7c1(0x170);}),_0x14bf3f[0x0]['focus'](),setTimeout(()=>{const _0xe9e890=_0x2642be;_0x9ec297[_0xe9e890(0x156)][_0xe9e890(0x151)]=_0xe9e890(0x148);},0x7d0));});}document[_0xe0341b(0x153)](_0xe0341b(0x143),function(){const _0x28471a=_0xe0341b;createHearts(),updateCounter(),setCurrentYear(),lazyLoadImages(),setupPasscode(),setInterval(updateCounter,0x3e8),setInterval(()=>{const _0x608eae=_0x2844,_0x54d0f1=document[_0x608eae(0x17f)](_0x608eae(0x142));_0x54d0f1&&(_0x54d0f1[_0x608eae(0x147)][_0x608eae(0x162)](_0x608eae(0x152)),setTimeout(()=>{const _0xe32c0b=_0x608eae;_0x54d0f1[_0xe32c0b(0x147)][_0xe32c0b(0x14d)](_0xe32c0b(0x152));},0x7d0));},0x2710);const _0x275a32=document[_0x28471a(0x150)]('reveal-proposal-btn');_0x275a32&&_0x275a32[_0x28471a(0x153)](_0x28471a(0x15e),()=>{showProposal();});const _0x30b619=document['querySelector'](_0x28471a(0x14b)),_0x4325ef=document['querySelector'](_0x28471a(0x177)),_0xe11aa7=document[_0x28471a(0x17f)](_0x28471a(0x173)),_0x328d1f=document[_0x28471a(0x17f)](_0x28471a(0x140)),_0x4cb5f4=document[_0x28471a(0x17f)](_0x28471a(0x144)),_0x1c7053=document[_0x28471a(0x17f)](_0x28471a(0x182));_0x30b619&&_0x30b619[_0x28471a(0x153)](_0x28471a(0x15e),function(){const _0x394d98=_0x28471a;_0xe11aa7[_0x394d98(0x156)][_0x394d98(0x151)]=_0x394d98(0x157);if(_0x4cb5f4)_0x4cb5f4[_0x394d98(0x156)][_0x394d98(0x168)]='1';}),_0x4325ef&&_0x4325ef[_0x28471a(0x153)]('click',function(){const _0x42892f=_0x28471a;_0x328d1f[_0x42892f(0x156)]['display']='block';if(_0x1c7053)_0x1c7053[_0x42892f(0x156)]['opacity']='1';setTimeout(()=>{const _0x385250=_0x42892f;document[_0x385250(0x17f)]('header')[_0x385250(0x156)][_0x385250(0x151)]='none',document[_0x385250(0x17f)](_0x385250(0x15c))[_0x385250(0x156)]['display']='none',document[_0x385250(0x17f)](_0x385250(0x16c))[_0x385250(0x156)]['display']=_0x385250(0x148),document[_0x385250(0x17f)](_0x385250(0x17d))[_0x385250(0x156)][_0x385250(0x151)]=_0x385250(0x148),document[_0x385250(0x17f)](_0x385250(0x179))['style']['display']='none',document[_0x385250(0x17f)](_0x385250(0x180))[_0x385250(0x156)][_0x385250(0x151)]='none';},0x7d0);});});</script>       
+</body>
+
+</html>
